@@ -33,12 +33,12 @@ const Todos: FC<Props> = ({todos}) => {
         formRef.current?.reset()
         addOptimisticTodo(newTodo)
         const result = await createTodoAction(title)
-
         if (result?.error) {
             toast.error(result.error)
         }
 
     }
+
 
     return (
         <div>
@@ -69,3 +69,4 @@ const SubmitButton = () => {
         <Button type="submit" className="ml-2" disabled={pending}>Add Todo</Button>
     )
 }
+
