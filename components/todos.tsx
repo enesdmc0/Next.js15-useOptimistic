@@ -7,7 +7,7 @@ import {Button} from "@/components/ui/button";
 import {useFormStatus} from 'react-dom'
 import {createTodoAction} from "@/app/actions";
 import {toast} from "sonner";
-import TodoItem from "@/components/ui/todo-item";
+import TodoItem from "@/components/todo-item";
 
 interface Props {
     todos: Todo[]
